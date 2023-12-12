@@ -96,7 +96,7 @@ section h3 {
 
 /* GALLERY */
 .linkG {
-  background-image: url(/img/h_2.jpg);
+  background-image: url(https://github.com/otkui/artwork/blob/main/img/h_2.jpg?raw=true);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -122,7 +122,7 @@ section h3 {
   width: 100%;
   height: 100%;
   top: 0;
-  background: url(/img/h_2.jpg) no-repeat center center;
+  background: url(https://github.com/otkui/artwork/blob/main/img/h_2.jpg?raw=true) no-repeat center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -ms-background-size: cover;
@@ -169,7 +169,7 @@ section h3 {
 
 /* PRODUCT */
 .linkP {
-  background-image: url(/img/h_3.jpg);
+  background-image: url(https://github.com/otkui/artwork/blob/main/img/h_3.jpg?raw=true);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -195,7 +195,7 @@ section h3 {
   width: 100%;
   height: 100%;
   top: 0;
-  background: url(/img/h_3.jpg) no-repeat center center;
+  background: url(https://github.com/otkui/artwork/blob/main/img/h_3.jpg?raw=true) no-repeat center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -ms-background-size: cover;
