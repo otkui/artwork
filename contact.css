@@ -1,0 +1,219 @@
+@import url(common.css);
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.swan_icon {
+  width: 96px;
+  margin-top: 120px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+main article > p {
+  font-size: 1.25em;
+  line-height: 2;
+  text-align: center;
+  margin-top: 64px;
+}
+
+main aside ul {
+  padding-top: 100px;
+  padding-bottom: 20px;
+}
+
+main aside li {
+  font-size: 1em;
+  line-height: 3;
+  text-align: left;
+  list-style-type: disc;
+}
+
+/* 〜〜フォームのスタイルここから〜〜 */
+/* 幅:80%、中央配置 */
+main form {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* FlexBox、下余白:16px、縦方向の位置:ベースライン */
+main dl div {
+  display: flex;
+  align-items: baseline;
+  padding-bottom: 16px;
+}
+
+/* asaidとformの間に余白48px */
+main dl > div {
+  padding-top: 50px;
+}
+
+/* 太字、幅:12em */
+main dt {
+  flex-basis: 12em;
+  font-weight: bold;
+}
+
+/* 米印 */
+main dt span {
+  font-size: 1em;
+  padding-left: 8px;
+}
+
+/* 幅比率:1、文字と枠の間余白24px */
+main dd {
+  flex: 1;
+  padding-top: 24px;
+}
+
+/* 幅:100%、内側余白:8px */
+main input[type="text"],
+main input[type="email"],
+main textarea {
+  width: 100%;
+  padding: 8px;
+}
+
+/* 選択時のアウトラインに色付け */
+input:focus {
+  outline: 1px solid #4c444d;
+}
+textarea:focus {
+  outline: 1px solid #4c444d;
+}
+
+/* ラジオボタン */
+main dd label {
+  padding-right: 24px;
+}
+
+/* 高さ:12em、行の高さ:1.5、リサイズ:垂直 */
+main textarea {
+  height: 12em;
+  line-height: 1.5;
+  resize: vertical;
+}
+
+/* 内容 */
+main dl div:last-child dt {
+  padding-top: 16px;
+  align-self: flex-start;
+}
+
+/* 送信ボタン */
+main form button {
+  font: inherit;
+  color: #4c444d;
+  padding: 10px 22px 10px 30px;
+  letter-spacing: 8px;
+  border: 1px solid #666;
+  background-color: #fff;
+  border-radius: 30px;
+  margin-bottom: 5px;
+}
+
+main form button:hover {
+  opacity: 0.7;
+}
+
+.button {
+  text-align: center;
+  margin-top: 92px;
+  margin-bottom: 176px;
+}
+
+.attention {
+  padding-top: 5px;
+  padding-bottom: 100px;
+  color: #4c444d;
+  font-size: 20px;
+}
+
+/* ブロック表示 */
+main dl div {
+  display: block;
+}
+
+/* レスポンシブ */
+/* スマホ縦の書式 */
+@media (max-width: 575px) {
+  h1 {
+    margin-top: 120px;
+  }
+
+  .swan_icon {
+    margin-top: 88px;
+  }
+
+  /* ブロック表示 */
+  main dl div {
+    display: block;
+  }
+  /* 内側上余白:15px、下ボーダー:線幅1px/直線/カラー#666、内側下余白:5px、外側下余白:10px */
+  main dt {
+    padding-top: 15px;
+    border-bottom: 1px solid #666;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+  }
+
+  main article > p {
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 64px;
+    font-size: 1em;
+    line-height: 1.5;
+    text-align: left;
+  }
+
+  main aside ul {
+    width: 80%;
+    font-size: 0.75em;
+    line-height: 1.5;
+    list-style-type: disc;
+    padding-top: 104px;
+    margin-left: 5em;
+    padding-bottom: 24px;
+  }
+
+  main dt {
+    font-size: 20px;
+  }
+
+  main dt span {
+    font-size: 15px;
+  }
+
+  main label {
+    font-size: 20px;
+  }
+
+  main input {
+    font-size: 20px;
+  }
+
+  main textarea {
+    font-size: 20px;
+  }
+
+  main form button {
+    font-size: 50%;
+  }
+
+  .attention {
+    font-size: 30%;
+  }
+}
+
+/* iPadサイズ */
+@media (min-width: 576px) and (max-width: 991px) {
+  main aside ul {
+    padding-top: 104px;
+    margin-left: 5em;
+  }
+}

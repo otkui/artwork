@@ -1,0 +1,319 @@
+@import url(common.css);
+
+/* ☆☆画像天地左右中央配置☆☆ */
+div#lightbox {
+  top: 50% !important;
+  position: fixed;
+  transform: translateY(-50%);
+}
+
+.flexback2 {
+  margin-top: 180px;
+  margin-bottom: 460px;
+}
+
+.flex img {
+  width: 400px;
+}
+
+/* フレックスボックス */
+.container_1,
+.container_2,
+.container_3,
+.container_4,
+.container_5 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  column-gap: 184px;
+  padding-top: 88px;
+}
+
+/* 〜〜遷移ナビゲーションここから〜〜 */
+
+/* 背景 */
+.backbox {
+  width: 1024px;
+  height: 1016px;
+  background-color: #fff;
+  text-align: center;
+  margin-top: 232px;
+  margin-bottom: 240px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+/* ABOUT */
+.linkA {
+  background-image: url(/img/h_1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 640px;
+  height: 280px;
+  margin-top: 136px;
+  display: inline-block;
+  box-shadow: 5px 1px 7px rgba(0, 0, 0, 0.2);
+}
+
+/* ホバーで背景画像が拡大〜ここから */
+.linkA {
+  position: relative;
+  overflow: hidden;
+  max-width: 640px;
+  height: 280px;
+}
+
+.linkA:after {
+  position: absolute;
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  background: url(/img/h_1.jpg) no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -ms-background-size: cover;
+  background-size: cover;
+  -webkit-transition: all 0.3s ease-out;
+  -moz-transition: all 0.3s ease-out;
+  -ms-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+}
+.linkA:hover:after {
+  opacity: 0.8;
+  -moz-transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+.linkA a {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+  height: 100%;
+  text-decoration: none;
+  color: #4c444d;
+}
+/* ホバーで背景画像が拡大〜ここまで */
+
+.linkA p {
+  background-color: #fff;
+  width: 320px;
+  height: 140px;
+  font-size: 2.5em;
+  text-align: center;
+  margin-top: 140px;
+  margin-right: auto;
+  padding-top: 48px;
+}
+.linkA img {
+  width: 24px;
+  height: 24px;
+}
+
+/* PRODUCT */
+.linkP {
+  background-image: url(/img/h_3.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 640px;
+  height: 280px;
+  margin-top: 136px;
+  display: inline-block;
+  box-shadow: 5px 1px 7px rgba(0, 0, 0, 0.2);
+}
+
+/* ホバーで背景画像が拡大〜ここから */
+.linkP {
+  position: relative;
+  overflow: hidden;
+  max-width: 640px;
+  height: 280px;
+}
+
+.linkP:after {
+  position: absolute;
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  background: url(/img/h_3.jpg) no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -ms-background-size: cover;
+  background-size: cover;
+  -webkit-transition: all 0.3s ease-out;
+  -moz-transition: all 0.3s ease-out;
+  -ms-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+}
+.linkP:hover:after {
+  opacity: 0.8;
+  -moz-transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+.linkP a {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+  height: 100%;
+  text-decoration: none;
+  color: #4c444d;
+}
+/* ホバーで背景画像が拡大〜ここまで */
+
+.linkP p {
+  background-color: #fff;
+  width: 320px;
+  height: 140px;
+  font-size: 2.5em;
+  text-align: center;
+  margin-top: 140px;
+  margin-right: auto;
+  padding-top: 48px;
+}
+.linkP img {
+  width: 24px;
+  height: 24px;
+}
+
+/* サブテキスト */
+span {
+  font-size: 0.4em;
+}
+
+/* ホバー時のアクション */
+.linkA,
+.linkP,
+a:hover {
+  text-decoration: none;
+  opacity: unset;
+}
+
+/* 〜〜遷移ナビゲーションここまで〜〜 */
+
+/* レスポンシブ */
+@media (max-width: 575px) {
+  .flexback2 {
+    margin-top: 180px;
+    margin-bottom: 300px;
+  }
+
+  .flex p img {
+    width: 150px;
+  }
+
+  .container_1 {
+    gap: 20px;
+  }
+  .container_2 {
+    gap: 20px;
+  }
+  .container_3 {
+    gap: 20px;
+  }
+  .container_4 {
+    gap: 20px;
+  }
+  .container_5 {
+    gap: 20px;
+  }
+}
+
+/* ナビゲーションメニュー */
+.backbox {
+  width: 80%;
+  height: 90%;
+  margin-left: 0;
+  padding-top: 0;
+  padding-bottom: 100px;
+}
+
+.linkA {
+  /* 背景画像 */
+  width: 98%;
+  height: auto;
+  margin-top: 35%;
+  margin-left: 15%;
+}
+
+.linkP {
+  /* 背景画像 */
+  width: 98%;
+  height: auto;
+  margin-top: 25%;
+  margin-left: 15%;
+}
+
+p.linkA a,
+p.linkP a {
+  width: 100%;
+  height: auto;
+}
+
+.linkA p,
+.linkP p {
+  font-size: 1.5em;
+  width: 70%;
+}
+
+/* iPad */
+@media (min-width: 576px) and (max-width: 991px) {
+  .flexback2 {
+    margin-top: 180px;
+    margin-bottom: 300px;
+  }
+
+  .flex p img {
+    width: 300px;
+  }
+
+  /* ナビゲーションメニュー */
+  .backbox {
+    width: 80%;
+    height: 90%;
+    margin-left: 0;
+    padding-top: 0;
+    padding-bottom: 100px;
+  }
+
+  .linkA {
+    /* 背景画像 */
+    width: 98%;
+    height: auto;
+    margin-top: 25%;
+    margin-left: 15%;
+  }
+
+  .linkP {
+    /* 背景画像 */
+    width: 98%;
+    height: auto;
+    margin-top: 25%;
+    margin-left: 15%;
+  }
+
+  p.linkA a,
+  p.linkP a {
+    width: 100%;
+    height: auto;
+  }
+
+  .linkA p,
+  .linkP p {
+    font-size: 1.5em;
+    width: 70%;
+  }
+}
