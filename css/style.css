@@ -29,7 +29,7 @@ section.backbox {
 
 /* ABOUT */
 .linkA {
-  background-image: url(https://github.com/otkui/artwork/img/h_1.jpg?raw=true);
+  background-image: url(../img/h_1.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
