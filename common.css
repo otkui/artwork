@@ -253,6 +253,7 @@ footer a:hover {
     width: 50%;
     height: 50%;
     padding-top: 47px;
+    z-index: 3;
   }
 
   .toplogo {
@@ -277,6 +278,7 @@ footer a:hover {
 
   .instagram {
     padding-top: 128px;
+    z-index: 3;
   }
 
   .copyright {
@@ -327,6 +329,7 @@ footer a:hover {
     height: 50%;
     margin-left: auto;
     margin-right: auto;
+    z-index: 3;
   }
 
   .toplogo {
@@ -351,6 +354,7 @@ footer a:hover {
 
   .instagram {
     padding-top: 184px;
+    z-index: 3;
   }
 }
 
