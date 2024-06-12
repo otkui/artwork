@@ -207,8 +207,8 @@ a:hover {
 /* レスポンシブ */
 @media (max-width: 575px) {
   .flexback2 {
-    margin-top: 180px;
-    margin-bottom: 300px;
+    margin-top: 18px;
+    margin-bottom: 32px;
   }
 
   .flex p img {
@@ -272,7 +272,7 @@ p.linkP a {
 
 
 /* iPad */
-@media (min-width: 576px) and (max-width: 991px) {
+@media (min-width: 576px) and (max-width: 1024px) {
   .flexback2 {
     margin-top: 180px;
     margin-bottom: 300px;
@@ -280,6 +280,14 @@ p.linkP a {
 
   .flex p img {
     width: 300px;
+  }
+
+  .container_1,
+  .container_2,
+  .container_3,
+  .container_4,
+  .container_5 {
+    column-gap: 48px;
   }
 
   /* ナビゲーションメニュー */
