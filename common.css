@@ -373,6 +373,7 @@ footer a:hover {
   position: fixed;
   top: 15px;
   right: 3px;
+  z-index: 10;
 }
 
 /* 幅:25px, 高さ:4px, 背景色:任意, 角丸:4px, ブロック表示, 配置:absolute, 切り替え:0.5s */
